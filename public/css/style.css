@@ -1,0 +1,582 @@
+/* light css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol {
+    margin: 0 20px;
+    padding: .5em 0;
+}
+
+img {
+    border: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*html5 semantics tags */
+
+body,
+html {
+    font-family: Abel;
+    color: #333;
+    font-weight: 300;
+    height: 100%;
+    background-color: #fff;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+
+/* Clear Floated Elements */
+
+.clearfix:before,
+.clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+
+/* dumb-menu */
+
+#dumb-menu {
+    width: 100%;
+    top: 3.5em;
+}
+
+#dumb-menu nav {
+    position: fixed;
+    top: 10%;
+    z-index: 10;
+}
+
+
+/* menu */
+
+.menu {
+    font-family: Chivo;
+}
+
+.menu ul {
+    margin-left: 4em;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0.5em;
+}
+
+.menu ul li a {
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
+}
+
+.menu ul li a:hover {
+    color: rgb(125, 125, 125);
+}
+
+
+/* Social-icon */
+
+.social-icon {
+    right: 0;
+    line-height: 3.3em;
+}
+
+.social-icon ul {
+    margin-right: 3.5em;
+}
+
+.social-icon ul li {
+    display: inline-block;
+    width: 1.9em;
+    height: 1.9em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0.15em;
+}
+
+.social-icon li a {
+    line-height: 2em;
+    color: whitesmoke;
+    display: block;
+}
+
+.social-icon li:hover {
+    opacity: 0.8;
+}
+
+
+/* page, page-awesome by default */
+
+.page,
+.page-awesome {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+
+/* page */
+
+.page {}
+
+.page section {
+    position: relative;
+    color: #fff;
+}
+
+.page section h1 {
+    position: absolute;
+    display: block;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    letter-spacing: 0.05em;
+}
+
+.page section h2 {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-size: 12em;
+    letter-spacing: 0.09em;
+}
+
+.page section a:last-child {
+    position: absolute;
+    display: block;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* page-awesome */
+
+.page-awesome {}
+
+.page-awesome aside {
+    display: block;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+
+.page-awesome aside img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-awesome section {
+    display: block;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+
+.page-awesome section div {
+    width: 64%;
+    padding-top: 8em;
+}
+
+.page-awesome section div h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.page-awesome section div h2 {
+    font-family: "Dancing Script";
+    font-size: 1.6em;
+    font-weight: 600;
+    padding-top: 0;
+    margin-bottom: 1em;
+}
+
+.page-awesome section div a {
+    margin-top: 2em;
+}
+
+
+/* page-home */
+
+.page-home {
+    height: auto;
+    background: rgb(248, 210, 106);
+    text-align: center;
+}
+
+.page-home header {
+    background-color: black;
+    text-align: center;
+    height: 3em;
+}
+
+.page-home header span {
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    letter-spacing: -0.03em;
+    color: #E8E8E8;
+    line-height: 2.5em;
+}
+
+.page-home section a:first-child {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Pacifico;
+    font-size: 2.5em;
+    color: black;
+}
+
+.page-home section h1 {
+    top: 45%;
+}
+
+.page-home section h2 {
+    top: 62%;
+}
+
+.page-home section a:last-child {
+    top: 80%;
+}
+
+.page-home section image {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* page-flavors */
+
+.page-flavors section {
+    right: 0;
+}
+
+.page-flavors section div {
+    margin: 0 3em;
+}
+
+
+/* page-enjoy */
+
+.page-enjoy {
+    background-color: rgba(181, 232, 213, 1);
+    z-index: 3;
+}
+
+.page-enjoy section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    transform: translateZ(0);
+}
+
+
+/* page-place */
+
+.page-place aside {
+    right: 0;
+}
+
+.page-place section div {
+    margin: 0 0 0 12em;
+}
+
+
+/*  page-events */
+
+.page-events {
+    background-color: rgba(255, 191, 179, 1);
+}
+
+
+/* page-desserts */
+
+.page-desserts section {
+    right: 0;
+}
+
+.page-desserts section div {
+    margin: 0 3em;
+}
+
+
+/* page-ball */
+
+.page-ball {
+    width: 100%;
+    height: auto;
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 6%, #B5E8D5 6%, #B5E8D5 12%);
+    overflow: visible;
+}
+
+.page-ball section img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-ball section span {
+    color: #333;
+    font-size: 2.5em;
+    letter-spacing: 0.05em;
+}
+
+
+/* bg-layer */
+
+.bg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.bg-layer img {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* button style */
+
+.button {
+    border: none;
+    color: whitesmoke;
+    text-align: center;
+    display: inline-block;
+    padding: 0.3em 1.6em;
+    font-size: 1.3em;
+    font-weight: bold;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+}
+
+.button1:hover {
+    background-color: #333;
+    border: 2px solid #333;
+    color: white;
+}
+
+.button2 {
+    color: #333;
+    border: 2px solid #333;
+}
+
+.button2:hover {
+    background-color: #333;
+    color: whitesmoke;
+}
+
+
+/* footer */
+
+footer {
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    height: 20em;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    margin: 2em auto;
+}
+
+.footer-content section {
+    display: flex;
+    flex-direction: column;
+    padding: 1.6em;
+}
+
+.footer-content section span {
+    color: whitesmoke;
+    display: block;
+    text-align: left;
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+    word-spacing: -0.08em;
+}
+
+.footer-content section span:first-child {
+    margin-bottom: 0.6em;
+    font-size: 1.7em;
+}
+
+.footer-content section form {
+    display: block;
+    width: 100%;
+}
+
+.footer-content section form input[type=email] {
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid white;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+.footer-content section form input[type=submit] {
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid #ccc;
+    background-color: black;
+    color: #fff;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+.footer-content section:last-child {
+    margin-left: 6em;
+}
+
+.footer-content .social-icon {
+    text-align: left;
+    float: none;
+}
+
+.footer-content .social-icon ul {
+    margin: 0;
+}
+
+.footer-content .social-icon ul li {
+    background-color: whitesmoke;
+}
+
+.footer-content .social-icon li a {
+    color: black;
+}
+
+.footer-content .social-icon li:hover {
+    opacity: 0.4;
+}
+
+footer copyright {
+    position: absolute;
+    bottom: 6em;
+    left: 12em;
+    color: white;
+}
+
+footer copyright a {
+    color: white;
+}
+
+
+/* ----------- iPhone 6 ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+
+/* ----------- iPhone 6+ ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {}
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
